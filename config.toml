@@ -1,0 +1,36 @@
+# This is a TOML document
+
+title = "Ixia Test Configuration File"
+
+[dev]
+
+configFilePath = "bgp_ngpf.ixncfg"
+
+[dev.apiserver]
+ip = "10.36.237.179"
+username = "admin"
+password = "admin"
+sessionname = "BPTestSession"
+
+
+[dev.test]
+fixedFrameSize = 1400
+
+[dev.ixiachassisports]
+ixiachassisports = [["10.36.237.139","1","1"], ["10.36.237.139","1","2"]] 
+
+
+
+[prod]
+
+configFilePath = "bgp_ngpf.ixncfg"
+
+[prod.apiserver]
+ip = "10.36.231.231"
+username = "admin"
+password = "admin"
+sessionname = "EquinixGBPTestSessionProd"
+
+[prod.ixiachassisports]
+ixiachassisports = [["10.36.231.231","9","1"], ["10.36.231.231","9","2"]] 
+

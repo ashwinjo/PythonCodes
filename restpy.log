@@ -1,0 +1,52 @@
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [INFO] using python version 3.9.6 (default, Nov 10 2023, 13:38:27) 
+[Clang 15.0.0 (clang-1500.1.0.2.5)]
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [INFO] using ixnetwork-restpy version 1.1.11
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [WARNING] Verification of certificates is disabled
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [INFO] Determining the platform and rest_port using the 10.36.237.179 address...
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [WARNING] Unable to connect to http://10.36.237.179:443.
+2024-01-31 19:42:07 [ixnetwork_restpy.connection tid:8194826496] [INFO] Connection established to `https://10.36.237.179:443 on linux`
+2024-01-31 19:42:08 [ixnetwork_restpy.connection tid:8194826496] [INFO] Using IxNetwork api server version 9.14.2105.16
+2024-01-31 19:42:08 [ixnetwork_restpy.connection tid:8194826496] [INFO] User info IxNetwork/ixnetworkweb/admin-4-7125
+2024-01-31 19:42:08 [ixnetwork_restpy.connection tid:8194826496] [INFO] Loading config file: bgp_ngpf.ixncfg
+2024-01-31 19:42:17 [ixnetwork_restpy.connection tid:8194826496] [INFO] [['10.36.237.139', '1', '1'], ['10.36.237.139', '1', '2']]
+2024-01-31 19:42:18 [ixnetwork_restpy.connection tid:8194826496] [INFO] [['10.36.237.139', '1', '1'], ['10.36.237.139', '1', '2']]
+2024-01-31 19:42:18 [ixnetwork_restpy.connection tid:8194826496] [INFO] Adding test port hosts [10.36.237.139]...
+2024-01-31 19:42:24 [ixnetwork_restpy.connection tid:8194826496] [INFO] PortMapAssistant._add_hosts duration: 5.7287678718566895secs
+2024-01-31 19:42:24 [ixnetwork_restpy.connection tid:8194826496] [INFO] Connecting virtual ports to test ports using location
+2024-01-31 19:42:50 [ixnetwork_restpy.connection tid:8194826496] [INFO] PortMapAssistant._connect_ports duration: 26.324152946472168secs
+2024-01-31 19:42:50 [ixnetwork_restpy.connection tid:8194826496] [INFO] Checking virtual port link states
+2024-01-31 19:42:58 [ixnetwork_restpy.connection tid:8194826496] [INFO] PortMapAssistant._check_link_state duration: 8.568728685379028secs
+2024-01-31 19:43:08 [ixnetwork_restpy.connection tid:8194826496] [INFO] Verify protocol sessions
+
+2024-01-31 19:43:18 [ixnetwork_restpy.connection tid:8194826496] [INFO] Row:0  View:Protocols Summary  Sampled:2024-01-31 19:43:21.754870 UTC
+	Protocol Type: BGP Peer
+	Sessions Up: 4
+	Sessions Down: 0
+	Sessions Not Started: 0
+	Sessions Total: 4
+	Average Setup Rate: N/A
+	Average Teardown Rate: N/A
+Row:1  View:Protocols Summary  Sampled:2024-01-31 19:43:21.754870 UTC
+	Protocol Type: IPv4
+	Sessions Up: 4
+	Sessions Down: 0
+	Sessions Not Started: 0
+	Sessions Total: 4
+	Average Setup Rate: N/A
+	Average Teardown Rate: N/A
+2024-01-31 19:43:23 [ixnetwork_restpy.connection tid:8194826496] [INFO] Running fixed Traffic of 1400
+2024-01-31 19:44:23 [ixnetwork_restpy.connection tid:8194826496] [INFO] +-----------+-----------+----------+------------+-------------+
+| Tx Port   | Rx Port   |   Loss % |   TxFrames |   Rx Frames |
++===========+===========+==========+============+=============+
+| Port_1    | Port_2    |        0 |     325987 |      325987 |
++-----------+-----------+----------+------------+-------------+
+| Port_2    | Port_1    |        0 |     325996 |      325996 |
++-----------+-----------+----------+------------+-------------+
+2024-01-31 19:44:25 [ixnetwork_restpy.connection tid:8194826496] [INFO] Running imix Traffic
+2024-01-31 19:45:23 [ixnetwork_restpy.connection tid:8194826496] [INFO] +-----------+-----------+----------+------------+-------------+
+| Tx Port   | Rx Port   |   Loss % |   TxFrames |   Rx Frames |
++===========+===========+==========+============+=============+
+| Port_1    | Port_2    |        0 |    1135887 |     1135887 |
++-----------+-----------+----------+------------+-------------+
+| Port_2    | Port_1    |        0 |    1135885 |     1135885 |
++-----------+-----------+----------+------------+-------------+
