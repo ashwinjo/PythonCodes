@@ -2,6 +2,8 @@ from ixnetwork_restpy import SessionAssistant, Files, BatchUpdate
 from tabulate import tabulate
 import tomli
 import time
+import statsLogging
+
 
 
 def get_session_assistant():
@@ -113,9 +115,13 @@ if __name__ == "__main__":
     connect_physical_ports_to_logical_ports()
     start_protocols()
 
+    
+    # statsLogging.enable_csv_logging()
+    
+
     modify_traffic_framesize(typeOfTraffic="fixed")
     start_traffic()
-    time.sleep(30)
+    time.sleep(120)
     stop_traffic()
     show_traffic_statistics()
 
@@ -124,6 +130,16 @@ if __name__ == "__main__":
     time.sleep(30)
     stop_traffic()
     show_traffic_statistics()
+
+    # statsLogging.download_csv_poll()
+    # statsLogging.disable_csv_logging()
+
+    stop_protocols()
+    releasePorts()
+    deleteSession()
+
+
+    
 
 
 

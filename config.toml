@@ -10,7 +10,7 @@ configFilePath = "bgp_ngpf.ixncfg"
 ip = "10.36.237.179"
 username = "admin"
 password = "XXXXX"
-sessionname = "BPTestSession"
+sessionname = "BGPTestSession"
 
 
 [dev.test]
