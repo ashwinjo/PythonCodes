@@ -9,7 +9,7 @@ configFilePath = "bgp_ngpf.ixncfg"
 [dev.apiserver]
 ip = "10.36.237.179"
 username = "admin"
-password = "admin"
+password = "XXXXX"
 sessionname = "BPTestSession"
 
 
@@ -28,7 +28,7 @@ configFilePath = "bgp_ngpf.ixncfg"
 [prod.apiserver]
 ip = "10.36.231.231"
 username = "admin"
-password = "admin"
+password = "XXXXXX"
 sessionname = "EquinixGBPTestSessionProd"
 
 [prod.ixiachassisports]
